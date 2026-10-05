@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Gear meshing study</title><desc id="desc">An original blueprint-style representation of two meshing involute gears.</desc>
+  <defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#3b5660" opacity=".27"/></pattern></defs>
+  <rect width="960" height="720" fill="#101d25"/><rect width="960" height="720" fill="url(#grid)"/>
+  <g fill="none"><circle cx="366" cy="364" r="176" stroke="#a9e5c1" stroke-width="16" stroke-dasharray="42 18"/><circle cx="663" cy="364" r="124" stroke="#d5a571" stroke-width="15" stroke-dasharray="36 17"/><circle cx="366" cy="364" r="145" stroke="#6a9594" stroke-width="3"/><circle cx="663" cy="364" r="99" stroke="#987c61" stroke-width="3"/><circle cx="366" cy="364" r="50" stroke="#a9e5c1" stroke-width="7"/><circle cx="663" cy="364" r="37" stroke="#d5a571" stroke-width="7"/></g>
+  <path d="M366 364H663" stroke="#e8eeea" stroke-width="2" stroke-dasharray="10 8"/><path d="M500 170V560" stroke="#e8eeea" stroke-width="2" stroke-dasharray="10 8"/>
+  <path d="M463 236c80 16 72 70 42 128s-23 118 51 142" fill="none" stroke="#e8eeea" stroke-width="5"/><circle cx="506" cy="364" r="11" fill="#a9e5c1"/>
+  <text x="120" y="125" fill="#a9e5c1" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">PAPER 01 / GEAR MESHING</text><text x="621" y="618" fill="#d5a571" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">INVOLUTE CONTACT</text>
+</svg>

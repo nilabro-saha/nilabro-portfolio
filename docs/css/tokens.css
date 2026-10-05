@@ -1,0 +1,18 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b1015;
+  --bg-raised: #111920;
+  --bg-soft: #162129;
+  --surface: #17212a;
+  --line: #31404a;
+  --text: #f3f5f3;
+  --muted: #a2afb6;
+  --accent: #a9e5c1;
+  --accent-dim: #669d80;
+  --warm: #d5a571;
+  --page-width: 1460px;
+  --page-gutter: clamp(1.15rem, 5vw, 5.5rem);
+  --header-height: 104px;
+  --radius: 22px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
