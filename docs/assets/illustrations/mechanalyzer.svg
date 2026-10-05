@@ -1,12 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
   <title id="title">Mechanism visualization</title><desc id="desc">An original conceptual diagram with two meshing gears, a linkage, and a coupler curve.</desc>
-  <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#39535d" opacity=".3"/></pattern><filter id="soft"><feGaussianBlur stdDeviation="18"/></filter></defs>
-  <rect width="960" height="720" fill="#101c25"/><rect width="960" height="720" fill="url(#grid)"/>
-  <circle cx="675" cy="320" r="128" fill="#4f9e8d" opacity=".12" filter="url(#soft)"/>
-  <g fill="none" stroke="#a9e5c1" stroke-width="11"><circle cx="390" cy="340" r="128" stroke-dasharray="49 18"/><circle cx="628" cy="340" r="108" stroke-dasharray="41 16"/></g>
-  <g fill="none" stroke="#568f96" stroke-width="4"><circle cx="390" cy="340" r="107"/><circle cx="628" cy="340" r="87"/><circle cx="390" cy="340" r="31"/><circle cx="628" cy="340" r="26"/></g>
-  <path d="M210 570L390 340 610 525 780 460" fill="none" stroke="#d5a571" stroke-width="11" stroke-linejoin="round"/><g fill="#d5a571" stroke="#101c25" stroke-width="8"><circle cx="210" cy="570" r="17"/><circle cx="390" cy="340" r="17"/><circle cx="610" cy="525" r="17"/><circle cx="780" cy="460" r="17"/></g>
-  <path d="M455 585C545 640 700 630 750 540c42-75-42-142-120-108-102 44-65 125 12 144" fill="none" stroke="#91d6be" stroke-width="4" stroke-dasharray="8 11"/>
-  <text x="125" y="155" fill="#a9e5c1" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">02 / INTERACTIVE MECHANISMS</text>
-  <text x="610" y="675" fill="#91d6be" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">COUPLER CURVE</text>
+  <g fill="none" stroke="#f1f2ef" stroke-width="11"><circle cx="390" cy="340" r="128" stroke-dasharray="49 18"/><circle cx="628" cy="340" r="108" stroke-dasharray="41 16"/></g>
+  <g fill="none" stroke="#8a9297" stroke-width="4"><circle cx="390" cy="340" r="107"/><circle cx="628" cy="340" r="87"/><circle cx="390" cy="340" r="31"/><circle cx="628" cy="340" r="26"/></g>
+  <path d="M210 570L390 340 610 525 780 460" fill="none" stroke="#f1f2ef" stroke-width="11" stroke-linejoin="round"/><g fill="#f1f2ef" stroke="#24282b" stroke-width="8"><circle cx="210" cy="570" r="17"/><circle cx="390" cy="340" r="17"/><circle cx="610" cy="525" r="17"/><circle cx="780" cy="460" r="17"/></g>
+  <path d="M455 585C545 640 700 630 750 540c42-75-42-142-120-108-102 44-65 125 12 144" fill="none" stroke="#aeb5b8" stroke-width="4" stroke-dasharray="8 11"/>
+  <text x="125" y="155" fill="#f1f2ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">02 / INTERACTIVE MECHANISMS</text>
+  <text x="610" y="675" fill="#f1f2ef" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">COUPLER CURVE</text>
 </svg>

@@ -49,7 +49,7 @@ function setupCarousel(carousel) {
   const slides = [...track.querySelectorAll('.slide')];
   const previous = carousel.querySelector('.carousel-arrow.prev');
   const next = carousel.querySelector('.carousel-arrow.next');
-  const count = carousel.querySelector('.carousel-count');
+  const progress = carousel.querySelector('.carousel-progress');
   let active = 0;
   let frame = 0;
 
@@ -60,7 +60,7 @@ function setupCarousel(carousel) {
       Math.abs(slide.offsetLeft - track.offsetLeft + slide.offsetWidth / 2 - viewportCenter) <
       Math.abs(slides[best].offsetLeft - track.offsetLeft + slides[best].offsetWidth / 2 - viewportCenter) ? index : best, 0);
     slides.forEach((slide, index) => slide.classList.toggle('is-active', index === active));
-    count.innerHTML = `${String(active + 1).padStart(2, '0')} <span>/ ${String(slides.length).padStart(2, '0')}</span>`;
+    progress.innerHTML = `<span class="sr-only">Slide ${active + 1} of ${slides.length}</span>${slides.map((_, index) => `<span class="carousel-bubble${index === active ? ' is-active' : ''}" aria-hidden="true"></span>`).join('')}`;
     previous.disabled = active === 0;
     next.disabled = active === slides.length - 1;
   };

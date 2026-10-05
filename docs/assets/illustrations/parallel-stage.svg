@@ -1,12 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
   <title id="title">Parallel stage state-space concept</title><desc id="desc">An original conceptual parallel-stage diagram with applied forces and response traces.</desc>
-  <defs><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#3a5960" opacity=".27"/></pattern></defs>
-  <rect width="960" height="720" fill="#101d25"/><rect width="960" height="720" fill="url(#grid)"/>
-  <path d="M210 495L480 570 760 490 480 420Z" fill="#18333b" stroke="#6bb29d" stroke-width="5"/><path d="M310 290L470 332 650 285 480 245Z" fill="#193d43" stroke="#a9e5c1" stroke-width="6"/>
-  <g stroke="#d5a571" stroke-width="9" stroke-linecap="round"><path d="M245 480L325 290"/><path d="M455 557L460 330"/><path d="M715 482L630 295"/></g>
-  <g fill="#d5a571"><circle cx="245" cy="480" r="15"/><circle cx="325" cy="290" r="15"/><circle cx="455" cy="557" r="15"/><circle cx="460" cy="330" r="15"/><circle cx="715" cy="482" r="15"/><circle cx="630" cy="295" r="15"/></g>
-  <path d="M480 120V218" stroke="#a9e5c1" stroke-width="7"/><path d="M480 224l-20-27h40Z" fill="#a9e5c1"/><path d="M750 330H660" stroke="#a9e5c1" stroke-width="7"/><path d="M657 330l25-18v36Z" fill="#a9e5c1"/>
-  <text x="505" y="187" fill="#a9e5c1" font-family="Arial,sans-serif" font-size="20">F<tspan baseline-shift="sub" font-size="14">z</tspan></text><text x="730" y="313" fill="#a9e5c1" font-family="Arial,sans-serif" font-size="20">F<tspan baseline-shift="sub" font-size="14">x</tspan></text>
-  <path d="M170 610H800" stroke="#526c70" stroke-width="2"/><path d="M170 615c90 0 95-56 170-56s90 60 160 60 75-40 137-40 88 26 163 26" fill="none" stroke="#95d2bb" stroke-width="4"/>
-  <text x="130" y="115" fill="#a9e5c1" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">03 / PARALLEL STAGE MODEL</text>
+  <path d="M210 495L480 570 760 490 480 420Z" fill="#4b5358" stroke="#f1f2ef" stroke-width="5"/><path d="M310 290L470 332 650 285 480 245Z" fill="#60686d" stroke="#f1f2ef" stroke-width="6"/>
+  <g stroke="#f1f2ef" stroke-width="9" stroke-linecap="round"><path d="M245 480L325 290"/><path d="M455 557L460 330"/><path d="M715 482L630 295"/></g>
+  <g fill="#f1f2ef"><circle cx="245" cy="480" r="15"/><circle cx="325" cy="290" r="15"/><circle cx="455" cy="557" r="15"/><circle cx="460" cy="330" r="15"/><circle cx="715" cy="482" r="15"/><circle cx="630" cy="295" r="15"/></g>
+  <path d="M480 120V218" stroke="#f1f2ef" stroke-width="7"/><path d="M480 224l-20-27h40Z" fill="#f1f2ef"/><path d="M750 330H660" stroke="#f1f2ef" stroke-width="7"/><path d="M657 330l25-18v36Z" fill="#f1f2ef"/>
+  <text x="505" y="187" fill="#f1f2ef" font-family="Arial,sans-serif" font-size="20">F<tspan baseline-shift="sub" font-size="14">z</tspan></text><text x="730" y="313" fill="#f1f2ef" font-family="Arial,sans-serif" font-size="20">F<tspan baseline-shift="sub" font-size="14">x</tspan></text>
+  <path d="M170 610H800" stroke="#91999e" stroke-width="2"/><path d="M170 615c90 0 95-56 170-56s90 60 160 60 75-40 137-40 88 26 163 26" fill="none" stroke="#f1f2ef" stroke-width="4"/>
+  <text x="130" y="115" fill="#f1f2ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">03 / PARALLEL STAGE MODEL</text>
 </svg>

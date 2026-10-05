@@ -48,6 +48,18 @@ def save(image: Image.Image, name: str) -> None:
     print(f"Wrote {OUT / (name + '.webp')}")
 
 
+def save_document_page(image: Image.Image, name: str, *, crop_bottom: float = 1.0) -> None:
+    """Save an authentic page preview without a presentation matte.
+
+    CSS owns the framing so the source can sit flush against a themed carousel
+    edge. ``crop_bottom`` preserves page top through the named factual region.
+    """
+    image = image.crop((0, 0, image.width, round(image.height * crop_bottom)))
+    OUT.mkdir(parents=True, exist_ok=True)
+    image.save(OUT / f"{name}.webp", format="WEBP", quality=90, method=6)
+    print(f"Wrote {OUT / (name + '.webp')}")
+
+
 def omit_credential_id(image: Image.Image) -> Image.Image:
     """Cover only the small credential-number strip, not the certificate body."""
     image = image.copy()
@@ -83,6 +95,10 @@ def make_inae(source_dir: Path) -> Image.Image:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", required=True, type=Path)
+    parser.add_argument("--seminar-one", required=True, type=Path)
+    parser.add_argument("--seminar-two", required=True, type=Path)
+    parser.add_argument("--gear-paper", required=True, type=Path)
+    parser.add_argument("--linkage-paper", required=True, type=Path)
     args = parser.parse_args()
     source = args.source_dir.expanduser().resolve()
 
@@ -106,6 +122,10 @@ def main() -> None:
             excerpt = omit_credential_id(excerpt)
         save(fit_on_canvas(excerpt), name)
     save(make_inae(source), "inae-mentee")
+    save_document_page(render_page(args.seminar_one, 1), "seminar-wearable-technology")
+    save_document_page(render_page(args.seminar_two, 1), "seminar-compliant-mechanisms")
+    save_document_page(render_page(args.gear_paper, 1), "paper-gear-meshing", crop_bottom=.58)
+    save_document_page(render_page(args.linkage_paper, 1), "paper-linkage-kinematics", crop_bottom=.78)
 
 
 if __name__ == "__main__":

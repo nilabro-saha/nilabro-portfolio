@@ -17,6 +17,7 @@ export function setupSectionNav() {
 
   const update = index => {
     currentIndex = index;
+    const section = sections[index];
     const label = links[index].textContent.trim();
     links.forEach((link, linkIndex) => {
       if (linkIndex === index) link.setAttribute('aria-current', 'location');
@@ -26,6 +27,7 @@ export function setupSectionNav() {
     currentLabel.textContent = `Current section: ${label}`;
     previous.disabled = index === 0;
     next.disabled = index === sections.length - 1;
+    document.documentElement.dataset.activeTheme = section.dataset.theme ?? 'neutral';
   };
 
   links.forEach((link, index) => link.addEventListener('click', event => {

@@ -26,17 +26,22 @@ Tests use the locally installed Google Chrome. If Chrome is unavailable, remove 
 - Edit factual prose and card order in `docs/index.html`. All main content is semantic HTML and remains visible if JavaScript is disabled.
 - Edit external evidence and contact URLs in `docs/config.json`. Keys are readable kebab-case identifiers used by `data-link-key` on anchors. A missing, `null`, or non-HTTPS/non-`mailto:` URL hides its anchor. The `full-cv` key is intentionally `null`; no CV button is displayed yet.
 - Edit colours, spacing, and motion in `docs/css/tokens.css`. Layout and components are separate from design tokens.
-- Project and publication graphics in `docs/assets/illustrations/` are original conceptual SVGs, not laboratory drawings or Springer page reproductions.
+- Project graphics in `docs/assets/illustrations/` are original conceptual SVGs, not laboratory drawings. Publication cards use locally generated first-page title-and-abstract excerpts of the cited papers.
 
 ## Certificate previews and provenance
 
-Preview WebP images were rendered from the user-supplied prepared-documents folder; original PDFs are not stored in the project. To regenerate locally:
+Preview WebP images were rendered from the user-supplied prepared-documents folder and the two public Zenodo seminar PDFs; original PDFs are not stored in the project. To regenerate locally:
 
 ```sh
-python3 scripts/render_previews.py --source-dir '/path/to/Prepared Documents'
+python3 scripts/render_previews.py \
+  --source-dir '/path/to/Prepared Documents' \
+  --seminar-one '/path/to/Seminar Presentation 1.pdf' \
+  --seminar-two '/path/to/Seminar Presentation 2.pdf' \
+  --gear-paper '/path/to/Gear Meshing Visualization paper.pdf' \
+  --linkage-paper '/path/to/MechAnalyzer kinematics paper.pdf'
 ```
 
-The script requires Pillow and Poppler's `pdftoppm`. It selects pages from `Academic Certificates/Academic-certificates-saha-nilabro.pdf`, `Professional Certificates/Professional-certificates-saha-nilabro.pdf`, `INAE-mentee-saha-nilabro.pdf`, and `OAL-rock-star-saha-nilabro.pdf`. Its crop coordinates and output names are explicit. INAE's approval passage and named appendix row are labelled as **two separate excerpts**; the Oracle award crop stops before the internal nomination and expensing text. Oracle credential IDs are omitted. Do not add the passport, transcript, full application bundles, private email recipient lists, or lab-supplied model imagery to this public site.
+The script requires Pillow and Poppler's `pdftoppm`. It selects certificate excerpts, full seminar title pages, and the upper halves of both publication first pages. Its crop coordinates and output names are explicit. INAE's approval passage and named appendix row are labelled as **two separate excerpts**; the Oracle award crop stops before the internal nomination and expensing text. Oracle credential IDs are omitted. Do not add the passport, transcript, full application bundles, private email recipient lists, or lab-supplied model imagery to this public site.
 
 ## GitHub Pages
 
