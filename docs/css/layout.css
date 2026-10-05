@@ -20,6 +20,7 @@ html { scroll-snap-type: y proximity; }
 .contact-section { scroll-snap-align: start; padding: clamp(4rem, 8vw, 9rem) var(--page-gutter); background: #0e171c; }
 .contact-shell { display: grid; grid-template-columns: 1fr minmax(230px, 370px); gap: 4rem; align-items: end; }
 .contact-shell h2 { font-size: clamp(2.75rem, 5.5vw, 6.7rem); letter-spacing: -.045em; line-height: 1.04; margin-bottom: 1.25rem; }
+.contact-shell h2:focus { outline: none; }
 .contact-shell p:not(.section-index) { color: var(--muted); margin: 0; }
 .contact-links { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
 .contact-links a { display: flex; justify-content: space-between; padding: 1.15rem .2rem; border-bottom: 1px solid var(--line); text-decoration: none; font-size: 1.05rem; font-weight: 650; transition: color .2s ease, padding .2s ease; }
