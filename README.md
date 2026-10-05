@@ -40,4 +40,4 @@ The script requires Pillow and Poppler's `pdftoppm`. It selects pages from `Acad
 
 ## GitHub Pages
 
-The project is ready to publish from the `main` branch's `/docs` directory, with `.nojekyll` included. The repository has not been created or published by this project setup. Before publishing, review all thumbnails and content, decide whether to provide a public full-CV URL, and confirm the desired GitHub account/repository name. The site uses relative asset paths, so it can run under a Pages project path or at a personal root site.
+The project is ready to publish from the `main` branch's `/docs` directory, with `.nojekyll` included. The site uses relative asset paths, so it can run under a Pages project path or at a personal root site.
